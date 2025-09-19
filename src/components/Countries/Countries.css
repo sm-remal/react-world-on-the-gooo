@@ -1,6 +1,15 @@
 .countries{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 10px;
     justify-items: center;
+}
+.heading{
+    text-align: center;
+}
+
+@media only screen and (max-width: 576px) {
+  .countries{
+    grid-template-columns: 1fr; 
+  }
 }
